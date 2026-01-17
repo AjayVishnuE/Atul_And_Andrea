@@ -1,10 +1,22 @@
 import { Heart } from 'lucide-react';
 import { motion } from 'motion/react';
+import { ImageWithFallback } from './figma/ImageWithFallback';
+import { IMAGES } from '../constants';
 
 export function Footer() {
   return (
-    <footer className="py-16 px-4 bg-gradient-to-b from-purple-50 to-pink-100">
-      <div className="max-w-4xl mx-auto text-center">
+    <footer className="py-16 px-4 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <ImageWithFallback
+          src={IMAGES.backgroundImages.footer}
+          alt="Footer Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-purple-100/95 to-pink-200/95"></div>
+      </div>
+
+      <div className="max-w-4xl mx-auto text-center relative z-10">
         <motion.div
           animate={{
             scale: [1, 1.2, 1],

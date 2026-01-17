@@ -74,7 +74,6 @@ export function WeddingDetails() {
               <div>
                 <p className="text-rose-600 text-sm mb-1">{WEDDING_INFO.ceremony.event}</p>
                 <p className="text-rose-900 text-2xl mb-1">{WEDDING_INFO.ceremony.time}</p>
-                <p className="text-rose-600 text-sm">Please arrive by 8:30 AM</p>
               </div>
             </motion.div>
 
@@ -96,17 +95,6 @@ export function WeddingDetails() {
               </div>
             </motion.div>
           </div>
-        </motion.div>
-
-        {/* Dress Code */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="mt-12 bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 p-8 rounded-2xl text-center shadow-lg"
-        >
-          <p className="text-rose-600">Your presence is our greatest joy</p>
         </motion.div>
       </div>
     </section>

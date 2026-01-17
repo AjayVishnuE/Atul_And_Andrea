@@ -11,7 +11,7 @@ export function Gallery() {
   const totalWidth = images.length * (imageWidth + gap);
 
   return (
-    <section className="py-20  relative overflow-hidden">
+    <section className="py-20 relative overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <ImageWithFallback
@@ -36,7 +36,7 @@ export function Gallery() {
 
         <div className="relative">
           {/* Infinite Scroll Container with padding for hover effect */}
-          <div className="overflow-hidden py-12 bg-gradient-to-b from-transparent to-pink-50/30">
+          <div className="overflow-hidden py-12 from-transparent to-pink-50/30">
             <motion.div
               className="flex gap-8"
               style={{ width: 'fit-content' }}

@@ -1,11 +1,22 @@
 import { MapPin, Navigation } from 'lucide-react';
 import { motion } from 'motion/react';
-import { WEDDING_INFO } from '../constants';
+import { ImageWithFallback } from './figma/ImageWithFallback';
+import { WEDDING_INFO, IMAGES } from '../constants';
 
 export function Location() {
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-pink-50/50 to-purple-50/50">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-4 relative overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <ImageWithFallback
+          src={IMAGES.backgroundImages.location}
+          alt="Location Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-white/90"></div>
+      </div>
+
+      <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -57,13 +68,6 @@ export function Location() {
                   <Navigation className="w-5 h-5" />
                   Get Directions
                 </a>
-              </div>
-
-              <div className="mt-8 p-6 bg-gradient-to-r from-purple-100 to-blue-100 rounded-2xl border border-purple-200">
-                <h4 className="text-lg font-serif text-rose-900 mb-2 text-center">Parking Available</h4>
-                <p className="text-rose-700 text-sm text-center">
-                  Ample parking space is available at the venue
-                </p>
               </div>
             </div>
           </div>
