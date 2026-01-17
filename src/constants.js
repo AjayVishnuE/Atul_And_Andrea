@@ -35,53 +35,53 @@ export const WEDDING_INFO = {
 export const IMAGES = {
   // Section Background Images - Download these and place in /assets/backgrounds/
   backgroundImages: {
-    hero: "public/assets/backgrounds/hero.jpg",
-    gallery: "public/assets/backgrounds/wedding_flowers.jfif",
-    weddingDetails: "public/assets/backgrounds/gallery.jpeg",
-    location: "public/assets/backgrounds/rhythm.png",
-    footer: "public/assets/backgrounds/wedding_flowers.jfif"
+    hero: "assets/backgrounds/hero.jpg",
+    gallery: "assets/backgrounds/wedding_flowers.jfif",
+    weddingDetails: "assets/backgrounds/gallery.jpeg",
+    location: "assets/backgrounds/rhythm.png",
+    footer: "assets/backgrounds/wedding_flowers.jfif"
   },
   
   // Gallery Images - Download these and place in /assets/gallery/
   galleryImages: [
     {
-      url: "public/assets/gallery/couple-1.png",
+      url: "assets/gallery/couple-1.png",
       alt: "Couple Portrait 1"
     },
     // {
-    //   url: "public/assets/gallery/couple-2.jpg",
+    //   url: "assets/gallery/couple-2.jpg",
     //   alt: "Romantic Moment"
     // },
     {
-      url: "public/assets/gallery/couple-3.jpg",
+      url: "assets/gallery/couple-3.jpg",
       alt: "Love & Joy"
     },
     {
-      url: "public/assets/gallery/couple-4.jpg",
+      url: "assets/gallery/couple-4.jpg",
       alt: "Wedding Romance"
     },
     {
-      url: "public/assets/gallery/couple-5.jpg",
+      url: "assets/gallery/couple-5.jpg",
       alt: "Indian Wedding Couple"
     },
     {
-      url: "public/assets/gallery/couple-6.jpg",
+      url: "assets/gallery/couple-6.jpg",
       alt: "Bride & Groom Portrait"
     },
     {
-      url: "public/assets/gallery/couple-7.jpg",
+      url: "assets/gallery/couple-7.jpg",
       alt: "Wedding Ceremony"
     },
     // {
-    //   url: "public/assets/gallery/couple-8.jpg",
+    //   url: "assets/gallery/couple-8.jpg",
     //   alt: "Romantic Photo"
     // },
     // {
-    //   url: "public/assets/gallery/couple-9.jpg",
+    //   url: "assets/gallery/couple-9.jpg",
     //   alt: "Engagement Couple"
     // },
     // {
-    //   url: "public/assets/gallery/couple-10.jpg",
+    //   url: "assets/gallery/couple-10.jpg",
     //   alt: "Love Moments"
     // }
   ]
